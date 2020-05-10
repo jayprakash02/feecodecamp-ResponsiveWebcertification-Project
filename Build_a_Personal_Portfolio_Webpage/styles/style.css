@@ -1,0 +1,383 @@
+/*// iPhones -- Portrait (320 x 568, 375 x 667, 414 x 736) px */
+/*// Slim Split Screen in iPad -- Portrait & Landscape (320 x 1024, 320 x 768, 320 x 1112, 320 x 834, 375 x 1366, 375 x 1024) px */
+/*// Wide Split Screen in iPad -- Portrait (438 x 1024, 504 x 1112, 639 x 1366) px */
+/*// Split Screen in iPad -- Landscape (507 x 768, 551 x 834, 678 x 1024) px */
+.oi-code {color: #33cccc; /*teal*/}
+
+body {
+	background-color: #F8F9FA;
+	margin: 0;
+}
+/*WHITE BLOCK FOR NAVBAR*/
+/*#welcome-section::before {
+	display: block;
+	height: 10vh;
+	background-color: #fff;
+	content: " ";
+}*/
+/*THIRD ITERATION NEEDS TOP PADDING FOR NAV*/
+/*body::after{
+      content: "";
+      top: 0;
+      height: 100vh;
+      left: 0;
+      right: 0;
+      position: fixed;
+      z-index: -1;
+      background: #6ac7ae;
+      background-image: url('../images/calm-seas.jpg'), url('https://live.staticflickr.com/896/27224764198_af209549f1_o.jpg');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-attachment: scroll;
+}*/
+.contain {
+	/*background-color: #F8F9FA;*/
+	display: flex;
+	flex-direction: column;
+}
+a {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#navbar {
+	background: rgba(248, 249, 250, 0.9);
+	width: 100vw;
+	overflow: hidden;
+	list-style-type: none;
+	position: fixed;
+	z-index: 2;
+}
+#navbar a {
+	text-decoration: none;
+}
+#logo-img {
+	width: 50vw;
+	height: auto;
+	padding: 1% 0 0 5%;
+}
+.collapse-menu {
+	text-align: right;
+	width: 40vw;
+	margin: 4% 3% 0 0;
+	float: right;
+}
+.collapse-menu label {
+	cursor: pointer;
+	height: 10vw;
+	width: 10vw;
+	padding-right: 10%;
+}
+.collapse-menu input {
+	display: none;
+}
+span.oi-x {
+	display: none;
+}
+.menu-items {
+	max-height: 0;
+	overflow: hidden;
+	width: 100vw;
+	margin-left: -60vw;
+}
+.nav {
+	margin-bottom: .5rem;
+}
+.collapse-menu > input:checked ~ .menu-items {
+    max-height: 100%;
+}
+.collapse-menu > input:checked + label span.oi-menu {
+	display: none;
+}
+.collapse-menu > input:checked + label span.oi-x {
+	display: inline-block;
+}
+.nav-item {
+	list-style: none;
+}
+.whtBtn {
+	background: rgba(248, 248, 248, 0.9);
+	border: none;
+	border-radius: 3px;
+	width: 90vw;
+	text-align: right;
+	padding-right: 10%;
+}
+span.oi-nav {
+	color: #00CCCC;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	height: 10vw;
+}
+span.oi-nav:hover, .whtBtn:hover, .whtBtn:hover > .oi-nav {
+	color: #00e6b8;
+	opacity: 0.7;
+	cursor: pointer;
+}
+/*.collapse-menu button:active {
+}*/
+/*.nav-item > input:checked {
+
+}*/
+/*SECOND ITERATION STILL IMAGE*/
+#welcome-section, #contact {
+	background: #6ac7ae;
+	background-image: url('../images/calm-seas.jpg'), url('https://live.staticflickr.com/896/27224764198_af209549f1_o.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-attachment: scroll;
+	width: 100%;
+	height: 100%;
+}
+/*FIRST ITERATION NOT WORK ON MOBILE
+/*#welcome-section, #contact {
+ 	background-image: url("../images/calm-seas.jpg");
+ 	background-color: #fff;
+ 	background-size: cover;
+   	background-repeat: no-repeat;
+ 	background-position: bottom;
+ 	background-attachment: fixed;
+ 	margin-top: 10vh;
+ }*/
+#welcome-section {
+	/*height: 100vh;*/
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #fff;
+	margin-top: 10vh;
+}
+.top-top {
+	padding-top: 10vh;
+	flex-grow: 0;
+}
+.icon-top {
+	font-size: 5rem;
+}
+.top-mid {
+	flex-grow: 5;
+}
+.top-mid h1 {
+	font-size: 3.5rem;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-top: 4vh;
+	margin-bottom: 0;
+}
+.top-mid h2 {
+	font-size: 1.75rem;
+	font-family: 'Lekton', sans-serif;
+}
+.top-bot {
+	flex-grow: 1;
+}
+.icon-bot {
+	font-size: 2rem;
+	color: #fff;
+}
+.icon-bot:hover {
+	cursor: pointer;
+	color: #00e6b8;
+}
+#projects {
+	background-color: #F8F9FA;
+	min-height: 100vh;
+	padding-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #666;
+}
+#projects .icon-top {
+	font-size: 2rem;
+}
+#projects h1 {
+	font-size: 1.5rem;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.cardImg {
+	position: relative;
+}
+.cardImgOverlay {
+	display: none;
+}
+.project-tile:hover .cardImgOverlay {
+	display: block;
+}
+.project-tile:hover {
+	cursor: pointer;
+	opacity: 0.7
+}
+.cardImgOverlay {
+	/*display: inline-block;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12vw;
+	color: #00e6b8;
+	width: 100vw;
+}
+.thumb {
+	max-width: 90vw;
+}
+.thumb:hover {
+	/*cursor: pointer;
+	opacity: 0.7;*/
+}
+/*#profile-link {
+	font-size: 1.3rem;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #00CCCC;
+}*/
+/*#profile-link:hover {
+	cursor: pointer;
+	color: #00e6b8;
+	opacity: 0.7;
+}*/
+.oi-eye {
+	top: 3px;
+}
+.sqBtn {
+	font-size: 1.3rem;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #00CCCC;
+	border: 3px solid #00CCCC;
+	background: #fff;
+	border-radius: 3px;
+	padding: 2%;
+	margin-top: 3vh;
+}
+.sqBtn:hover {
+	cursor: pointer;
+	color: #00e6b8;
+	border: 3px solid #00e6b8;
+	opacity: 0.7;
+}
+#projects h2 {
+	font-size: 1rem;
+	font-family: 'Lekton', sans-serif;
+	padding: 0 4%;
+}
+#projects .icon-bot {
+	color: #666;
+}
+#projects .icon-bot:hover {
+	cursor: pointer;
+	color: #00e6b8;
+	opacity: 0.7;
+}
+/*#contact {
+	height: 10vh;
+}*/
+#contact {
+	padding-top: 7vh;
+	height: 70vh;
+	margin-top: 9vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	color: #fff;
+}
+#contact .icon-top {
+	font-size: 3rem;
+}
+.bottom-top {
+	flex-grow: 1;
+}
+.bottom {
+	flex-grow: 2;
+}
+.bottom h1 {
+	font-size: 3rem;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.bottom-bot {
+	flex-grow: 3;
+}
+#email-link {
+	font-size: 3rem;
+	color: #fff;
+}
+.oi-envelope-open {
+	display: none;
+}
+#email-link:hover .oi-envelope-closed {
+	display: none;
+}
+#email-link:hover .oi-envelope-open {
+	display: inline-block;
+}
+#email-link:hover {
+	cursor: pointer;
+	color: #00e6b8;
+}
+footer {
+	background-color: #F8F9FA;
+	height: 13vh;
+}
+footer .col {
+	display: block;
+	text-align: center;
+	line-height: .5rem;
+	font-size: 1.3rem;
+}
+.left {
+	/*text-align: left;*/
+	/*width: 50vw;*/
+	/*padding-left: 3vw;*/
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.right {
+	/*text-align: right;*/
+	/*width: 42vw;*/
+	/*padding-right: 3vw;*/
+	font-family: 'Lekton', sans-serif;
+}
+footer h6 {
+	color: #595959;
+	display: inline-block;
+	margin: 3vh 0 1vh;
+}
+footer .oi-heart {
+	padding-right: 1vw;
+}
+.right br {
+	display: none;
+}
+/*// iPad -- Portrait (768 x 1024, 834 x 1112, 1024 x 1366) px */
+/*// Wide Split Screen in iPad -- Landscape (694 x 768, 782 x 834, 981 x 1024) px */
+@media screen and (min-aspect-ratio: 2/3) and (max-aspect-ratio: 1/1) {
+	.oi-code {color: #99ffcc; sea foam}
+}
+
+/*// iPad -- Landscape (1024 x 768, 1112 x 834, 1366 x 1024) px */
+/*// Small, Large Desktop (1024 x 720, 2560 x 1600) px */
+@media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 33/20) {
+	.oi-code {color:  #fb9084; salmon}
+}
+
+/*// iPhone SE, iPhone 8, iPhone 8 Plus -- Landscape (568 x 320, 667 x 375, 736 x 414) px */
+/*// Laptop & Desktop -- height restrict (height 678px & below) */
+@media screen and (min-aspect-ratio: 33/20) {
+	.oi-code {color: #9999ff; purple}
+
+	/*// Medium Desktop -- (1920 x 1080) px */
+		@media screen and (min-width: 1200px) {
+			.oi-code {color: #ff99bb; pink}
+		}
+	/*// Large Desktop (2560 x 1600) px*/
+	@media screen and (min-width: 2000px) {
+			#Quickstart h1 {color: #ffd11a; gold}
+
+
+		}
+}
